@@ -30,6 +30,7 @@ def rich_presence(client, tanksDB):
     #enter a battle
 
     import BigWorld
+    import helpers
     from Avatar import PlayerAvatar
 
     def new_onEnterWorld(self, prereqs):
@@ -38,7 +39,7 @@ def rich_presence(client, tanksDB):
 
         tankName = tanksDB[BigWorld.player().vehicle.typeDescriptor.name]['shortName']
         
-        rp = { "details": "Playing with %s" % (tankName), "state": "In a battle", "timestamp": time.time() }
+        rp = { "details": "Playing with %s" % (tankName), "state": "In a battle", "timestamp": time.time(), "version": version }
         
         client.send(b'%s' % (reply(rp)))
 
