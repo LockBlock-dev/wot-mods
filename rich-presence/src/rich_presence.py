@@ -38,6 +38,8 @@ def rich_presence(client, tanksDB):
         old_onEnterWorld(self, prereqs)
 
         tankName = tanksDB[BigWorld.player().vehicle.typeDescriptor.name]['shortName']
+
+        version = helpers.getClientVersion()
         
         rp = { "details": "Playing with %s" % (tankName), "state": "In a battle", "timestamp": time.time(), "version": version }
         
