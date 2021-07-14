@@ -31,7 +31,7 @@ def parse(msg):
     return { "size": int(msg[0]), "data": msg[1].split('$')[0] }
 
 while True:
-    message = (socket.recv(1024)).decode('utf-8').encode("latin1").decode('utf-8')
+    message = (socket.recv(1024)).decode('utf-8')
 
     if not message:
         break
@@ -55,7 +55,7 @@ while True:
     if time.time() - updated >= 15:
         print(RPC.update(
             details = rp["details"],
-            state = rp["state"],
+            state = rp["state"].encode("latin1").decode('utf-8'),
             large_image = "logo",
             large_text = rp["version"],
             start = timestamp
