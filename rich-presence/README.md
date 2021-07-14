@@ -15,7 +15,7 @@ The server runs on `127.0.0.1` port `7777`. You can edit these in [server.py](./
 
 • Download the project or clone it
 
-• You need to use my own [mod loader](../loader/mod_loader.py) and compile it, see [how in **Building**](../loader/README.md).
+• You need to use my own [mod loader](../loader/src/mod_loader.py) and compile it, see [how in **Building**](../loader/README.md).
 
 • Install [Pypresence](https://pypi.org/project/pypresence/), for that run a command and do :
 ```bash
