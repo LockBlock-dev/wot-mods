@@ -15,6 +15,7 @@ while not connected:
         connected = True
     except Exception as e:
         pass
+    time.sleep(2)
 
 socket.send(b'CLIENT READY')
 print('Connected to the rich presence')
