@@ -4,16 +4,18 @@
 
 This repository is the collection of all the World of Tanks mods I have created so far.
 
-
 ## List of mods
 
-| Name | Link | Standalone | Format
-| --- | --- | --- | --- |
-| Discord rich presence | [🔗](./rich-presence) | ❌ | Python mod
-| Debug server | [🔗](./debug-server) | ❌ | Python mod
-| Keylogger | [🔗](./keylogger) | ❌ | Python mod
-| Mods loader | [🔗](./loader) | ✅ | Python mod
+| Name         | Link                 | Format |
+| ------------ | -------------------- | ------ |
+| Debug server | [🔗](./debug-server) | Wotmod |
+| Keylogger    | [🔗](./keylogger)    | Wotmod |
 
+## List of tools
+
+| Name            | Link                |
+| --------------- | ------------------- |
+| Mod auto-packer | [🔗](./auto-packer) |
 
 ## Copyright
 

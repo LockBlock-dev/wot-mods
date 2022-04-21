@@ -4,8 +4,7 @@
 
 The purpose of this mod is to provide you a server in the background that listens for local connection to provide an access to the BigWorld and Scaleform engines. This might be useful for figuring how things work.
 
-The server runs on `127.0.0.1` port `2222`. You can edit these in [server.py](./res/scripts/client/gui/mods/mod_server.py) and [client.py](./client.py).
-
+The server runs on `127.0.0.1` port `2222`. You can edit these in [server.py](./src/modules/server.py) and [client.py](./src/client.py).
 
 ## How to use
 
@@ -13,13 +12,14 @@ The server runs on `127.0.0.1` port `2222`. You can edit these in [server.py](./
 
 -   Download the project or clone it
 
--   Compile and pack the mod in a .wotmod, you can use my own [mod packer](../auto-packer).
+-   You need to use my own [mod loader](../loader/mod_loader.py) and compile it, see [how](../loader/README.md).
 
--   Move the .wotmod to your `World_of_Tanks/mods/X.X.X.X/` folder.
+-   Move [server.py](./src/modules/server.py) and [wotdbg.py](./src/modules/wotdbg.py) to your `World_of_Tanks/res_mods/X.X.X.X/mods/modules/` folder.
 
 -   Run the client in a command prompt:
+
 ```bash
-python2 client.py
+python2 src/client.py
 ```
 
 -   Start **World Of Tanks**, hopefully the server will starts
@@ -48,16 +48,13 @@ Received > your-username-here
 Request > QUIT #the server will stops
 ```
 
-
 ## Debugging
 
 If you have any problem, see what is going on in `World_of_Tanks/python.log`
 
-
 ## Credits
 
 Original [debug server](https://github.com/juho-p/wot-debugserver) I used to make my own.
-
 
 ## Copyright
 

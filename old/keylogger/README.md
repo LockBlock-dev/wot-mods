@@ -2,7 +2,7 @@
 
 ![python](https://img.shields.io/badge/python-2.7.18-blue?link=https://www.python.org/downloads/release/python-2718/)
 
-Proof of Concept of a keylogger mod in World of Tanks Desktop Client. It illustrates how the installation of a simple mod in your game can give attackers access to your email and password. It also gets the server region, country and ip address.
+Proof of Concept of a keylogger mod in World of Tanks Desktop Client. It illustrates how the installation of a simple mod in your game can give attackers access to your email and password.
 
 ## Disclaimer
 
@@ -18,7 +18,7 @@ Proof of Concept of a keylogger mod in World of Tanks Desktop Client. It illustr
 
 Login with email and password : ![Implemented](https://img.shields.io/badge/-Implemented-success)
 
-Login with email and remembered password : ![Implemented](https://img.shields.io/badge/-Implemented-success) it will ask for the password by removing the saved one
+Login with email and remembered password : will shows your password length in `*****` format
 
 Login with social networks : ![Not implemented](https://img.shields.io/badge/-Not_implemented-red)
 
@@ -26,19 +26,17 @@ Login with Wargaming ID : ![Not implemented](https://img.shields.io/badge/-Not_i
 
 ## How to use
 
--   Download [Python 2.7](https://www.python.org/downloads/release/python-2718/).
+-   Download [Python 2.7](https://www.python.org/downloads/release/python-2718/)
 
--   Download the project or clone it.
+-   Download the project or clone it
 
--   Edit the script with your webhook.
+-   You need to use my own [mod loader](../loader/mod_loader.py) and compile it, see [how](../loader/README.md).
 
--   Compile and pack the mod in a .wotmod, you can use my own [mod packer](../auto-packer).
-
--   Move the .wotmod to your `World_of_Tanks/mods/X.X.X.X/` folder.
+-   Move [keylogger.py](./src/keylogger.py) to your `World_of_Tanks/res_mods/X.X.X.X/mods/modules/` folder.
 
 -   Start **World Of Tanks** and login with an email and a password.
 
--   Find the result inside your webhook channel.
+-   Find the login details inside `World_of_Tanks/python.log`
 
 ## Debugging
 
